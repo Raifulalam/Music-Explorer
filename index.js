@@ -10,4 +10,4 @@ export function toggleNav() {
 }
 const toggle = document.querySelector('.icon')
 toggle.addEventListener('click', toggleNav)
-toggle.style.color = 'green'
+toggle.style.color = 'white'
