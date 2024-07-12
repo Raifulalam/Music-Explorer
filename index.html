@@ -33,7 +33,19 @@
     dolorum consequuntur rem, quo voluptatem? Quis ratione voluptatum excepturi maxime explicabo rem temporibus
     Lorem cupiditate.
   </div>
-  <script type="module" src="/main.js"></script>
+  <script>
+    function toggleNav() {
+      const nav = document.getElementById("myTopnav");
+      if (nav.className === "topnav") {
+        nav.className += " responsive";
+      } else {
+        nav.className = "topnav";
+      }
+    }
+    const toggle = document.querySelector('.icon')
+    toggle.addEventListener('click', toggleNav)
+    toggle.style.color = 'white'
+  </script>
 </body>
 
 </html>
