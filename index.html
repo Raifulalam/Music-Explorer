@@ -17,7 +17,7 @@
     <a href="#Explore">Explore</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
-    <a href="javascript:void(0);" class="icon">
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
       <div class="hamburger">
         <Span></Span>
         <Span></Span>
@@ -33,19 +33,8 @@
     dolorum consequuntur rem, quo voluptatem? Quis ratione voluptatum excepturi maxime explicabo rem temporibus
     Lorem cupiditate.
   </div>
-  <script>
-    function toggleNav() {
-      const nav = document.getElementById("myTopnav");
-      if (nav.className === "topnav") {
-        nav.className += " responsive";
-      } else {
-        nav.className = "topnav";
-      }
-    }
-    const toggle = document.querySelector('.icon')
-    toggle.addEventListener('click', toggleNav)
-    toggle.style.color = 'white'
-  </script>
+  <script type="module" src="/main.js"></script>
+
 </body>
 
 </html>
