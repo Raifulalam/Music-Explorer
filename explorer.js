@@ -1,6 +1,6 @@
 // for navbar responsive (togglenav)
 
-function toggleNav() {
+export function toggleNav() {
     const nav = document.getElementById("myTopnav");
     if (nav.className === "topnav") {
         nav.className += " responsive";
