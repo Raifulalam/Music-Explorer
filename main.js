@@ -25,15 +25,4 @@
 
 
 
-// for navbar responsive (togglenav)
-
-export function toggleNav() {
-  const nav = document.getElementById("myTopnav");
-  if (nav.className === "topnav") {
-    nav.className += " responsive";
-  } else {
-    nav.className = "topnav";
-  }
-}
-document.querySelector('.icon').addEventListener('click', toggleNav)
 
