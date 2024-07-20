@@ -180,4 +180,3 @@ map.on('click', function (e) {
     // });
     // marker.setIcon(customIcon);
 });
-
