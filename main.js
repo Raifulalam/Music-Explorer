@@ -151,32 +151,3 @@ const musicQuotes = [
 // Accessing a random quote
 const randomQuote = musicQuotes[Math.floor(Math.random() * musicQuotes.length)];
 document.querySelector('.randompara p').innerHTML = randomQuote;
-
-// for map
-var map = L.map('map').setView([51.505, -0.09], 13);
-
-
-
-// Add an OSM tile layer
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-// Listen for click events on the map
-map.on('click', function (e) {
-    var lat = e.latlng.lat;
-    var lng = e.latlng.lng;
-    console.log('Clicked at:', lat, lng);
-
-    // Create a marker at the clicked location
-    var marker = L.marker([lat, lng]).addTo(map);
-
-    // Customize the marker (optional)
-    // Example: Change the marker icon
-    // var customIcon = L.icon({
-    //     iconUrl: 'path/to/custom-icon.png',
-    //     iconSize: [32, 32],
-    //     // Other options...
-    // });
-    // marker.setIcon(customIcon);
-});

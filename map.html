@@ -8,45 +8,38 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <style>
         #map {
-            height: 400px;
+            height: 600px;
+            width: 600px;
+        }
+
+        .row {
+            margin: 0px;
+            display: flex;
+            gap: 15px;
         }
     </style>
 </head>
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <div id="map"></div>
+            </div>
+            <div class="col-md-2">
+                <h1>Information</h1>
+                <div class="visited">
+                    <p>Latitude: <span id="lat"></span></p>
+                    <p>Longitude: <span id="lng"></span></p>
 
+                    <p class="para" id="para"></p>
+                </div>
 
-    <script>
+            </div>
+        </div>
+    </div>
 
-        // Initialize the map
-        var map = L.map('map').setView([51.505, -0.09], 13);
-
-
-
-        // Add an OSM tile layer
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-        // Listen for click events on the map
-        map.on('click', function (e) {
-            var lat = e.latlng.lat;
-            var lng = e.latlng.lng;
-            console.log('Clicked at:', lat, lng);
-
-            // Create a marker at the clicked location
-            var marker = L.marker([lat, lng]).addTo(map);
-
-            // Customize the marker (optional)
-            // Example: Change the marker icon
-            // var customIcon = L.icon({
-            //     iconUrl: 'path/to/custom-icon.png',
-            //     iconSize: [32, 32],
-            //     // Other options...
-            // });
-            // marker.setIcon(customIcon);
-        });
-    </script>
+    <script src="map.js"></script>
 </body>
 
 </html>
