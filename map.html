@@ -5,24 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+    <link rel="stylesheet" href="map.css">
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-    <style>
-        #map {
-            height: 600px;
-            width: 600px;
-        }
-
-        .row {
-            margin: 0px;
-            display: flex;
-            gap: 15px;
-        }
-    </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="container-details">
             <div class="col-md-1">
                 <div id="map"></div>
             </div>
@@ -31,7 +20,6 @@
                 <div class="visited">
                     <p>Latitude: <span id="lat"></span></p>
                     <p>Longitude: <span id="lng"></span></p>
-
                     <p class="para" id="para"></p>
                 </div>
 
