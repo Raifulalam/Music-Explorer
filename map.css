@@ -1,6 +1,6 @@
 #map {
     height: 500px;
-    width: 500px;
+    width: 100%;
 }
 
 body {
@@ -9,12 +9,12 @@ body {
 }
 
 .container-details {
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     display: flex;
     gap: 15px;
 }
-
-.col-md-1 {}
 
 .col-md-2 {
     padding-left: 20px;

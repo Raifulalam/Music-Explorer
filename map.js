@@ -1,4 +1,4 @@
-alert("please open your location for better experience")
+
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
         let userLocation = [position.coords.latitude, position.coords.longitude];
