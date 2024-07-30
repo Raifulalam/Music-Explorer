@@ -1,131 +1,106 @@
-
 const quizData = [
     {
-        question: "Who is known as the King of Pop?",
-        options: ["Michael Jackson", "Elvis Presley", "Prince", "Justin Timberlake"],
-        answer: "Michael Jackson"
+        question: "Who is known as the 'God of Indian Classical Music'?",
+        options: ["Ravi Shankar", "Lata Mangeshkar", "A. R. Rahman", "Bismillah Khan"],
+        answer: "Ravi Shankar"
     },
     {
-        question: "What instrument did Louis Armstrong famously play?",
-        options: ["Trumpet", "Saxophone", "Piano", "Guitar"],
-        answer: "Trumpet"
+        question: "Which Indian musical instrument is also known as the 'King of Instruments'?",
+        options: ["Sitar", "Tabla", "Veena", "Flute"],
+        answer: "Sitar"
     },
     {
-        question: 'Which band performed the song "Bohemian Rhapsody"?',
-        options: ["Queen", "The Beatles", "Led Zeppelin", "Pink Floyd"],
-        answer: "Queen"
+        question: "Which ragam is considered the 'Morning Raga' in Indian classical music?",
+        options: ["Raga Bhairav", "Raga Yaman", "Raga Darbari Kanada", "Raga Bageshree"],
+        answer: "Raga Bhairav"
     },
     {
-        question: "Who is the lead singer of the band U2?",
-        options: ["Bono", "Bruce Springsteen", "Mick Jagger", "Freddie Mercury"],
-        answer: "Bono"
+        question: "Who composed the song 'Mile Sur Mera Tumhara', known as the 'Unity Song of India'?",
+        options: ["Pandit Ravi Shankar", "A. R. Rahman", "Bismillah Khan", "Lata Mangeshkar"],
+        answer: "Pandit Ravi Shankar"
     },
-    // {
-    //     question: "What city is known as the birthplace of jazz?",
-    //     options: ["New York City", "Chicago", "Los Angeles", "New Orleans"],
-    //     answer: "New Orleans"
-    // },
-    // {
-    //     question: "Who is known as the King of Pop?",
-    //     answer: "Michael Jackson",
-    //     options: ["Michael Jackson", "Prince", "Elvis Presley", "Stevie Wonder"]
-    // },
-    // {
-    //     question: "What instrument did Louis Armstrong famously play?",
-    //     answer: "Trumpet",
-    //     options: ["Trumpet", "Saxophone", "Clarinet", "Trombone"]
-    // },
-    // {
-    //     question: 'Which band performed the song "Bohemian Rhapsody"?',
-    //     answer: "Queen",
-    //     options: ["Queen", "The Beatles", "The Rolling Stones", "Pink Floyd"]
-    // },
-    // {
-    //     question: "Who is the lead singer of the band U2?",
-    //     answer: "Bono",
-    //     options: ["Bono", "Sting", "Bruce Springsteen", "Mick Jagger"]
-    // },
-    // {
-    //     question: "What city is known as the birthplace of jazz?",
-    //     answer: "New Orleans",
-    //     options: ["New Orleans", "Chicago", "Memphis", "Los Angeles"]
-    // },
-    // {
-    //     question: 'Which classical composer wrote "The Four Seasons"?',
-    //     answer: "Antonio Vivaldi",
-    //     options: ["Antonio Vivaldi", "Johann Sebastian Bach", "Ludwig van Beethoven", "Franz Schubert"]
-    // },
-    // {
-    //     question: "What is the official national instrument of Japan?",
-    //     answer: "Koto",
-    //     options: ["Koto", "Shamisen", "Taiko drum", "Shakuhachi"]
-    // },
-    // {
-    //     question: 'Which rock band recorded the album "Dark Side of the Moon"?',
-    //     answer: "Pink Floyd",
-    //     options: ["Pink Floyd", "The Rolling Stones", "Led Zeppelin", "The Who"]
-    // },
-    // {
-    //     question: "Who is the best-selling female artist of all time?",
-    //     answer: "Madonna",
-    //     options: ["Madonna", "Whitney Houston", "Celine Dion", "Taylor Swift"]
-    // },
-    // {
-    //     question: 'Which famous rapper\'s real name is Marshall Bruce Mathers III?',
-    //     answer: "Eminem",
-    //     options: ["Eminem", "Kanye West", "Jay-Z", "Snoop Dogg"]
-    // },
-    // {
-    //     question: "Who was the first woman to be inducted into the Rock and Roll Hall of Fame?",
-    //     answer: "Aretha Franklin",
-    //     options: ["Aretha Franklin", "Tina Turner", "Janis Joplin", "Diana Ross"]
-    // },
-    // {
-    //     question: 'What year did The Beatles release their album "Abbey Road"?',
-    //     answer: "1969",
-    //     options: ["1969", "1970", "1967", "1971"]
-    // },
-    // {
-    //     question: 'Who composed the famous opera "The Magic Flute"?',
-    //     answer: "Wolfgang Amadeus Mozart",
-    //     options: ["Wolfgang Amadeus Mozart", "Giuseppe Verdi", "Richard Wagner", "Johann Strauss II"]
-    // },
-    // {
-    //     question: 'What is the name of the guitarist known for his "signature" guitar model with Fender?',
-    //     answer: "Eric Clapton",
-    //     options: ["Eric Clapton", "Jimi Hendrix", "Jimmy Page", "Carlos Santana"]
-    // },
-    // {
-    //     question: "Which famous composer was deaf during most of his career?",
-    //     answer: "Ludwig van Beethoven",
-    //     options: ["Ludwig van Beethoven", "Johann Sebastian Bach", "Franz Schubert", "Johannes Brahms"]
-    // },
-    // {
-    //     question: "What is the name of the music festival held annually in the Nevada desert?",
-    //     answer: "Burning Man",
-    //     options: ["Burning Man", "Coachella", "Glastonbury", "Lollapalooza"]
-    // },
-    // {
-    //     question: 'Which famous band is known for their hit song "Stairway to Heaven"?',
-    //     answer: "Led Zeppelin",
-    //     options: ["Led Zeppelin", "The Rolling Stones", "The Who", "Pink Floyd"]
-    // },
-    // {
-    //     question: "Who won the first season of American Idol?",
-    //     answer: "Kelly Clarkson",
-    //     options: ["Kelly Clarkson", "Carrie Underwood", "Adam Lambert", "Jennifer Hudson"]
-    // },
-    // {
-    //     question: "What instrument did Jimi Hendrix famously play?",
-    //     answer: "Electric guitar",
-    //     options: ["Electric guitar", "Bass guitar", "Acoustic guitar", "Drums"]
-    // },
-    // {
-    //     question: 'Which famous composer wrote the symphony "Eine kleine Nachtmusik"?',
-    //     answer: "Wolfgang Amadeus Mozart",
-    //     options: ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Franz Joseph Haydn", "Johannes Brahms"]
-    // }
+    {
+        question: "Which Indian playback singer is known as the 'Nightangle of India'?",
+        options: ["Lata Mangeshkar", "Asha Bhosle", "Kishore Kumar", "Mohammed Rafi"],
+        answer: "Lata Mangeshkar"
+    },
+    {
+        question: "Which film marked the Bollywood debut of A. R. Rahman as a music composer?",
+        options: ["Roja", "Dil Se..", "Taal", "Bombay"],
+        answer: "Roja"
+    },
+    {
+        question: "Who was the founder of the famous music academy 'Sangeet Research Academy'?",
+        options: ["Pandit Ravi Shankar", "Ustad Allauddin Khan", "Pandit Jasraj", "Pandit Bhimsen Joshi"],
+        answer: "Pandit Jasraj"
+    },
+    {
+        question: "Which percussion instrument is essential in Indian classical music and often accompanies the sitar?",
+        options: ["Tabla", "Mridangam", "Dholak", "Pakhawaj"],
+        answer: "Tabla"
+    },
+    {
+        question: "Which Indian composer won two Oscars for his work on the film 'Slumdog Millionaire'?",
+        options: ["A. R. Rahman", "Ilaiyaraaja", "Anu Malik", "Shankar-Ehsaan-Loy"],
+        answer: "A. R. Rahman"
+    },
+    {
+        question: "Who composed the music for the Bollywood film 'Lagaan', which received widespread acclaim?",
+        options: ["A. R. Rahman", "Shankar-Ehsaan-Loy", "Ilaiyaraaja", "Pritam"],
+        answer: "A. R. Rahman"
+    },
+    {
+        question: "Which Indian classical singer is known for popularizing the Thumri style of singing?",
+        options: ["Begum Akhtar", "Pandit Bhimsen Joshi", "Kishori Amonkar", "Pandit Jasraj"],
+        answer: "Begum Akhtar"
+    },
+    {
+        question: "Who composed the music for the Bollywood film 'Swades'?",
+        options: ["A. R. Rahman", "Shankar-Ehsaan-Loy", "Pritam", "Vishal-Shekhar"],
+        answer: "A. R. Rahman"
+    },
+    {
+        question: "Which Indian musician is known for his mastery of the santoor, a hammered dulcimer-like instrument?",
+        options: ["Pandit Shivkumar Sharma", "Ustad Amjad Ali Khan", "Pandit Hariprasad Chaurasia", "Ustad Zakir Hussain"],
+        answer: "Pandit Shivkumar Sharma"
+    },
+    {
+        question: "Which Indian classical dance form is closely associated with Carnatic music?",
+        options: ["Bharatanatyam", "Kathak", "Kuchipudi", "Odissi"],
+        answer: "Bharatanatyam"
+    },
+    {
+        question: "Who is known for the composition 'Raga Charukeshi', which is popular in both Carnatic and Hindustani classical music?",
+        options: ["M. S. Subbulakshmi", "Pandit Jasraj", "Pandit Bhimsen Joshi", "Pandit Ravi Shankar"],
+        answer: "Pandit Ravi Shankar"
+    },
+    {
+        question: "Which Indian playback singer was known as the 'Voice of the Millennium'?",
+        options: ["Mohammed Rafi", "Kishore Kumar", "Asha Bhosle", "Udit Narayan"],
+        answer: "Mohammed Rafi"
+    },
+    {
+        question: "Who is known for his contribution to Hindustani classical music and the 'Kirana gharana'?",
+        options: ["Pandit Jasraj", "Ustad Bismillah Khan", "Pandit Bhimsen Joshi", "Ustad Amjad Ali Khan"],
+        answer: "Pandit Jasraj"
+    },
+    {
+        question: "Which Indian singer composed the music for the song 'Vande Mataram' in the film 'Kabhi Khushi Kabhie Gham'?",
+        options: ["Shankar Mahadevan", "Sonu Nigam", "Kailash Kher", "A. R. Rahman"],
+        answer: "A. R. Rahman"
+    },
+    {
+        question: "Which Indian playback singer is known for her versatility and has sung in various Indian languages?",
+        options: ["Asha Bhosle", "Shreya Ghoshal", "Alka Yagnik", "Sunidhi Chauhan"],
+        answer: "Shreya Ghoshal"
+    },
+    {
+        question: "Which Indian musician is known for his unique contributions to the fusion of Indian classical music with jazz?",
+        options: ["Trilok Gurtu", "Zakir Hussain", "L. Subramaniam", "Ravi Shankar"],
+        answer: "Trilok Gurtu"
+    }
 ];
+
 
 
 
