@@ -440,7 +440,6 @@ body {
 .song-side nav {
     width: 90%;
     height: 10%;
-    border: 1px solid #fff;
     margin: auto;
     display: flex;
     align-items: center;
@@ -480,6 +479,108 @@ body {
     bottom: -5px;
     left: 0;
     border-radius: 20px;
+}
+
+.song-side nav .search {
+    position: relative;
+    width: 40%;
+    padding: 1px 10px;
+    border-radius: 20px;
+    background: rgb(184, 184, 184, .1);
+    color: gray;
+    margin-right: 80px;
+}
 
 
+
+.song-side nav .search .bi {
+    font-size: 13px;
+    padding: 3px 0px 0px 10px;
+}
+
+.song-side nav .search input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+
+.song-side .content {
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.song-side .content h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.song-side .content p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #4c5262;
+    margin: 5px;
+
+}
+
+.song-side .content .buttons {
+    margin-top: 15px;
+}
+
+.song-side .content button {
+    width: 130px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid #3caeb4;
+    outline: none;
+    color: #fff;
+    background: #36e2ec;
+    cursor: pointer;
+    transition: .3s linear;
+
+}
+
+.song-side .content button:hover {
+    background: none;
+    color: #36e2ec;
+}
+
+.song-side .content button:nth-child(2) {
+    background: none;
+    color: #36e2ec;
+}
+
+.song-side .content button:nth-child(2):hover {
+    background: #36e2ec;
+    color: #fff;
+}
+
+.song-side .popular-song {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+    border: 1px solid #fff;
+
+}
+
+.song-side .popular-song .h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song-side .popular-song .h4 .bi {
+    color: #a4a8b4;
+    cursor: pointer;
+    transition: .3s linear;
+    background: none;
+}
+
+.song-side .popular-song .h4 .bi:hover {
+    color: #fff;
 }
