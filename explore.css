@@ -4,8 +4,6 @@ body {
     width: 100%;
     height: 100vh;
     background: #121213;
-    display: grid;
-    place-items: center;
     padding: 0%;
     margin: 0%;
     color: #fff;
@@ -13,11 +11,12 @@ body {
 
 .main {
     position: relative;
-    width: 85%;
+    width: 95;
     height: 95%;
     border: #fff;
     display: flex;
     flex-wrap: wrap;
+    margin: 20px;
 }
 
 .menu-side,
@@ -111,7 +110,6 @@ body {
 .menu-side .menu-songs {
     width: 98%;
     height: 320px;
-    /* border: 1px solid #fff; */
     margin-top: 40px;
     overflow: auto;
 
@@ -119,11 +117,7 @@ body {
 
 .menu-side .menu-songs::-webkit-scrollbar {
     display: none;
-
-
-
 }
-
 
 .menu-side .menu-songs li {
     list-style-type: none;
@@ -440,7 +434,7 @@ body {
 
 .song-side nav {
     width: 90%;
-    height: 10%;
+    height: auto;
     margin: auto;
     display: flex;
     align-items: center;
@@ -492,8 +486,6 @@ body {
     margin-right: 80px;
 }
 
-
-
 .song-side nav .search .bi {
     font-size: 13px;
     padding: 3px 0px 0px 10px;
@@ -510,9 +502,9 @@ body {
 
 .song-side .content {
     width: 90%;
-    height: 30%;
+    height: 25%;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .song-side .content h1 {
@@ -562,18 +554,19 @@ body {
 }
 
 .song-side .popular-song {
-    width: 76%;
-    height: auto;
+    width: 90%;
+    height: 38%;
     margin: auto;
-    margin-top: 15px;
-
-
+    margin-top: 0px;
 }
 
 .song-side .popular-song .h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0%;
+    padding: 0%;
+
 }
 
 .song-side .popular-song .h4 .bi {
@@ -581,6 +574,9 @@ body {
     cursor: pointer;
     transition: .3s linear;
     background: none;
+    font-size: 24px;
+    margin-right: 10px;
+    font-weight: 600;
 }
 
 .song-side .popular-song .h4 .bi:hover {
@@ -591,7 +587,6 @@ body {
     display: flex;
     height: 150px;
     margin-top: 15px;
-
     overflow: auto;
     scroll-behavior: smooth;
 }
@@ -601,10 +596,10 @@ body {
 }
 
 .song-side .popular-song .pop-song li {
-    min-width: 100px;
+    min-width: 85px;
     height: 140px;
     list-style: none;
-    margin-right: 10px;
+    margin-right: 3px;
     transition: .3s linear;
 }
 
@@ -614,12 +609,11 @@ body {
 
 .song-side .popular-song .pop-song li .img-play {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .song-side .popular-song .pop-song li .img-play img {
@@ -665,7 +659,6 @@ body {
     width: 90%;
     height: auto;
     margin: auto;
-    border: 1px solid #fff;
     margin-top: 15px;
 
 }
@@ -681,8 +674,47 @@ body {
     cursor: pointer;
     transition: .3s linear;
     background: none;
+    font-size: 24px;
+    margin-right: 10px;
+    font-weight: 600;
 }
 
 .song-side .popular-artists .h4 .bi:hover {
     color: #fff;
+}
+
+.song-side .popular-artists .item {
+    display: flex;
+    height: 150px;
+    margin-top: 15px;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.song-side .popular-artists .item::-webkit-scrollbar {
+    display: none;
+}
+
+.h4 h4 {
+    font-size: 18px;
+    margin: 0%;
+    margin-bottom: 8px;
+    padding: 0%;
+}
+
+.song-side .popular-artists .item li {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.song-side .popular-artists .item li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
 }
