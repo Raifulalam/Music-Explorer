@@ -450,15 +450,41 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
         makeAllBackground();
         Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = `rgb(105,105,105,.1)`;
         makeAllPlay();
-        el.classList.remove('bi-play-circle-fill');
-        el.classList.add('bi-pause-circle-fill');
-
-
-
-
+        el.target.classList.remove('bi-play-circle-fill');
+        el.target.classList.add('bi-pause-circle-fill');
+        wave.classList.add('active1');
     });
 });
 
+let currentStart = document.getElementById('currentStart');
+let currentEnd = document.getElementById('currentEnd');
+let seek = document.getElementById('seek');
+let bar2 = document.getElementById('bar2');
+let dot1 = document.getElementsByClassName('dot');
+music.addEventListener('timeupdate', () => {
+    let currentTime = music.currentTime;
+    let duration = music.duration;
+    let min1 = Math.floor(duration / 60);
+    let sec1 = Math.floor(duration % 60);
+    if (sec1 < 10) {
+        sec1 = '0' + sec1;
+    }
+
+    currentEnd.innerText = `${min1}:${sec1}`
+    let min2 = Math.floor(currentTime / 60);
+    let sec2 = Math.floor(currentTime % 60);
+    if (sec2 < 10) {
+        sec2 = '0' + sec2;
+    }
+    currentStart.innerText = `${min2}:${sec2}`;
+
+    let progressBar = parseInt((currentTime / duration) * 100);
+    seek.value = progressBar;
+    let seekBar = seek.value;
+    bar2.style.width = `${seekBar}%`;
+    dot1.style.left = `${seekBar}%`;
+
+});
 
 
 

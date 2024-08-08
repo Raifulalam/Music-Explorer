@@ -319,7 +319,7 @@ body {
 .master-play .bar .bar2 {
     position: absolute;
     background: #36e2ec;
-    width: 50%;
+    width: 0%;
     height: 100%;
     top: 0;
     transition: 1s linear;
