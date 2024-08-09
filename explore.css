@@ -311,7 +311,7 @@ body {
 .master-play .bar {
     position: relative;
     width: 43%;
-    height: 2px;
+    height: 4px;
     background: rgb(105, 105, 170, .1);
     margin: 0px 15px 0px 10px;
 }
@@ -390,7 +390,7 @@ body {
 
 .master-play .vol .vol-bar {
     background: #36e2ec;
-    width: 50%;
+    width: 100%;
     height: 100%;
     top: 0;
     transition: 1s linear;
@@ -402,7 +402,7 @@ body {
     height: 5px;
     background: #36e2ec;
     border-radius: 50%;
-    left: 0%;
+    left: 100%;
     top: -1.5px;
     transition: 1s linear;
 }

@@ -432,7 +432,6 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
         index = el.target.id;
         // console.log(index)
         music.src = `songs/${index}.mp3`;
-
         posterMasterplay.src = `thumbnail/${index}.png`
         music.play();
         masterPlay.classList.remove('bi-play-fill');
@@ -460,31 +459,94 @@ let currentStart = document.getElementById('currentStart');
 let currentEnd = document.getElementById('currentEnd');
 let seek = document.getElementById('seek');
 let bar2 = document.getElementById('bar2');
-let dot1 = document.getElementsByClassName('dot');
+let dot = document.getElementsByClassName('dot')
 music.addEventListener('timeupdate', () => {
     let currentTime = music.currentTime;
     let duration = music.duration;
     let min1 = Math.floor(duration / 60);
     let sec1 = Math.floor(duration % 60);
     if (sec1 < 10) {
-        sec1 = '0' + sec1;
+        sec1 = `0${sec1}`;
     }
 
     currentEnd.innerText = `${min1}:${sec1}`
     let min2 = Math.floor(currentTime / 60);
     let sec2 = Math.floor(currentTime % 60);
     if (sec2 < 10) {
-        sec2 = '0' + sec2;
+        sec2 = `0${sec2}`;
     }
     currentStart.innerText = `${min2}:${sec2}`;
-
     let progressBar = parseInt((currentTime / duration) * 100);
     seek.value = progressBar;
     let seekBar = seek.value;
     bar2.style.width = `${seekBar}%`;
-    dot1.style.left = `${seekBar}%`;
-
 });
+seek.addEventListener('change', () => {
+    let duration = music.duration;
+    music.currentTime = seek.value * duration / 100;
+});
+let volIcon = document.getElementById('vol_icon');
+let vol = document.getElementById('vol');
+let volBar = document.getElementsByClassName('vol-bar')[0];
+let volDot = document.getElementById('vol_dot')
+vol.addEventListener('change', () => {
+    if (vol.value == 0) {
+        volIcon.classList.remove('bi-volume-up-fill');
+        volIcon.classList.remove('bi-volume-down-fill');
+        volIcon.classList.add('bi-volume-off-fill');
+
+
+    }
+    if (vol.value > 0) {
+        volIcon.classList.remove('bi-volume-up-fill');
+        volIcon.classList.add('bi-volume-down-fill');
+        volIcon.classList.remove('bi-volume-off-fill');
+    }
+    if (vol.value > 50) {
+        volIcon.classList.add('bi-volume-up-fill');
+        volIcon.classList.remove('bi-volume-down-fill');
+        volIcon.classList.remove('bi-volume-off-fill');
+    }
+    let vol_a = vol.value;
+    volBar.style.width = `${vol_a}%`;
+    volDot.style.left = `${vol_a}%`;
+    music.volume = vol_a / 100;
+});
+let back = document.getElementById('back');
+let next = document.getElementById('next')
+back.addEventListener('click', () => {
+    index -= 1;
+    if (currentStart == currentEnd) {
+        index += 1;
+    }
+    if (index < 1) {
+        index = Array.from(document.getElementsByClassName('songItem')).length;
+    }
+    music.src = `songs/${index}.mp3`;
+    posterMasterplay.src = `thumbnail/${index}.png`
+    music.play();
+    masterPlay.classList.remove('bi-play-fill');
+    masterPlay.classList.add('bi-pause');
+
+    let songTitles = songs.filter((els) => {
+        return els.id == index;
+    })
+    songTitles.forEach(ele => {
+        let { songName } = ele;
+        title.innerHTML = songName;
+        // posterMasterplay.src = poster;
+
+    });
+    makeAllBackground();
+    Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = `rgb(105,105,105,.1)`;
+    makeAllPlay();
+    el.target.classList.remove('bi-play-circle-fill');
+    el.target.classList.add('bi-pause-circle-fill');
+    wave.classList.add('active1');
+});
+
+
+
 
 
 
