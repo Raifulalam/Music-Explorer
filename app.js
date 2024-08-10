@@ -480,11 +480,15 @@ music.addEventListener('timeupdate', () => {
     seek.value = progressBar;
     let seekBar = seek.value;
     bar2.style.width = `${seekBar}%`;
+    if (currentTime == duration) {
+        nextplay()
+    }
 });
 seek.addEventListener('change', () => {
     let duration = music.duration;
     music.currentTime = seek.value * duration / 100;
 });
+
 let volIcon = document.getElementById('vol_icon');
 let vol = document.getElementById('vol');
 let volBar = document.getElementsByClassName('vol-bar')[0];
@@ -516,9 +520,7 @@ let back = document.getElementById('back');
 let next = document.getElementById('next')
 back.addEventListener('click', () => {
     index -= 1;
-    if (currentStart == currentEnd) {
-        index += 1;
-    }
+
     if (index < 1) {
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
@@ -544,7 +546,39 @@ back.addEventListener('click', () => {
     el.target.classList.add('bi-pause-circle-fill');
     wave.classList.add('active1');
 });
+next.addEventListener('click', () => {
+    index++;
+    if (index > Array.from(document.getElementsByClassName('songItem')).length) {
+        index = 1;
+    }
+    music.src = `songs/${index}.mp3`;
+    posterMasterplay.src = `thumbnail/${index}.png`
+    music.play();
+    masterPlay.classList.remove('bi-play-fill');
+    masterPlay.classList.add('bi-pause');
 
+    let songTitles = songs.filter((els) => {
+        return els.id == index;
+    })
+    songTitles.forEach(ele => {
+        let { songName } = ele;
+        title.innerHTML = songName;
+        // posterMasterplay.src = poster;
+
+    });
+    makeAllBackground();
+    Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = `rgb(105,105,105,.1)`;
+    makeAllPlay();
+    el.target.classList.remove('bi-play-circle-fill');
+    el.target.classList.add('bi-pause-circle-fill');
+    wave.classList.add('active1');
+});
+function nextplay() {
+    index++;
+    if (index > Array.from(document.getElementsByClassName('songItem')).length) {
+        index = 1;
+    }
+}
 
 
 
