@@ -298,3 +298,46 @@ p {
 
   }
 }
+
+/* for footer */
+.footer {
+  background-color: transparent;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.our-facility {
+  max-width: 50%;
+  background: #3f3f62;
+  color: #d7d2d2c4;
+  border-radius: 30px;
+  padding-left: 20px;
+
+}
+
+.our-facility p {
+  font-size: 13px;
+  font-weight: 600;
+
+
+}
+
+.visit-us {
+  width: 100%;
+  background: #3f3f62;
+  color: #d7d2d2c4;
+  border-radius: 30px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+footer {
+  color: #fff;
+}
