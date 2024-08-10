@@ -341,3 +341,15 @@ p {
 footer {
   color: #fff;
 }
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+
+  }
+
+  footer {
+    text-align: center;
+    font-size: 14px;
+  }
+}
