@@ -1,10 +1,12 @@
+// import {data} from ('./data.js')
 const music = new Audio('songs/KhesariLalYadav.mp3');
-// music.play();
+
+music.play();
 const songs = [
     {
         id: 1,
         songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+                        <div class="subtitle">Khesarilal Yadav</div>`,
         poster: "thumbnail/1.png",
 
 
@@ -36,233 +38,233 @@ const songs = [
     },
     {
         id: 5,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Kamariya Gole Gole Dole Raja Ji || Neelkamal Singh Shilpi Raj Bhojpuri New Blockbuster Song 2022<br>
+                        <div class="subtitle"> Neelkamal Singh , Shilpi Raj </div>`,
         poster: "thumbnail/5.png",
 
 
     },
     {
         id: 6,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Chadhal Jawani Rasgulla | Dj Remix Song | Neelkamal Singh | Shilpi Raj New Bhojpuri Song 2023<br>
+                        <div class="subtitle">Neelkamal Singh , Shilpi Raj </div>`,
         poster: "thumbnail/6.png",
 
 
     },
     {
         id: 7,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Heroine | Neelkamal Singh | Sanjana Mishra | Gulab Jaisan Khilal Badu | Bhojpuri Song<br>
+                        <div class="subtitle">Neelkamal Singh | Sanjana Mishra</div>`,
         poster: "thumbnail/7.png",
 
 
     },
     {
         id: 8,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `निम्बू खरबूजा भईल 2 | #Karishma Kakkar | Sapna Chauhan | Bhojpuri Song<br>
+                        <div class="subtitle">Karishma Kakkar | Sapna Chauhan</div>`,
         poster: "thumbnail/8.png",
 
 
     },
     {
         id: 9,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `पाँचे के नाचे अइहा | #Pawan Singh | #Shilpi_Raj | Ft- Dimpal Singh | Panche Ke Nache | #Video Song<br>
+                        <div class="subtitle">Pawan Singh | #Shilpi_Raj</div>`,
         poster: "thumbnail/9.png",
 
 
     },
     {
         id: 10,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Piya Ji Ke Muski | Khesari Lal Yadav, Aamrapali Dubey | Doli Saja Ke Rakhna | FULL SONG | Movie Song<br>
+                        <div class="subtitle"> Khesari Lal Yadav, Aamrapali Dubey </div>`,
         poster: "thumbnail/10.png",
 
 
     },
     {
         id: 11,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Tu Mera Koi Na Hoke Bhi Kuch Lage Lyrics – Arijit Singh<br>
+                        <div class="subtitle">Arijit Singh</div>`,
         poster: "thumbnail/11.png",
 
 
     },
     {
         id: 12,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Besharam Rang Song | Pathaan | Shah Rukh Khan, Deepika Padukone | Vishal & Sheykhar | Shilpa, Kumaar<br>
+                        <div class="subtitle"> Vishal–Shekhar</div>`,
         poster: "thumbnail/12.png",
 
 
     },
     {
         id: 13,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Baarish | Half Girlfriend | Arjun Kapoor & Shraddha Kapoor| Ash King ,Sashaa | Tanishk| Baarish 2024<br>
+                        <div class="subtitle"> Ash King & Shashaa Tirupati</div>`,
         poster: "thumbnail/13.png",
 
 
     },
     {
         id: 14,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `chal chaiya chaiya >br>
+                        <div class="subtitle">Sukhwinder Singh & Sapna Awasthi</div>`,
         poster: "thumbnail/14.png",
 
 
     },
     {
         id: 15,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Meri Mehbooba | Zara Tasveer Se Tu Nikal Ke Samne Aa | Kumar Sanu | Alka Yagnik | Pardes (1997)<br>
+                        <div class="subtitle">Kumar Sanu | Alka Yagnik</div>`,
         poster: "thumbnail/15.png",
 
 
     },
     {
         id: 16,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Udd Jaa Kaale Kaava | Gadar 2 | Sunny Deol, Ameesha | Mithoon, Udit N, Alka Y | Uttam S,Anand Bakshi<br>
+                        <div class="subtitle">Mithoon|Udit Narayan | Alka Yagnik</div>`,
         poster: "thumbnail/16.png",
 
 
     },
     {
         id: 17,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Chal Tere Ishq Mein Lyrics – Gadar 2<br>
+                        <div class="subtitle">Mithoon, Neeti Mohan & Vishal Mishra</div>`,
         poster: "thumbnail/17.png",
 
 
     },
     {
         id: 18,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Challa | Full Song | Jab Tak Hai Jaan | Shah Rukh Khan, Katrina Kaif | Rabbi | A. R. Rahman | Gulzar<br>
+                        <div class="subtitle">A. R. Rahman | Gulzar</div>`,
         poster: "thumbnail/18.png",
 
 
     },
     {
         id: 19,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
+        songName: `Dard E Disco Full Video HD Song | Om Shanti Om | ShahRukh<br>
+                        <div class="subtitle">Sukhwinder Singh, Marianne DCruz and Caralisa</div>`,
         poster: "thumbnail/19.png",
 
 
     },
     {
         id: 20,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/19.png",
+        songName: `Dil Diyan Gallan Song | Tiger Zinda Hai | Salman Khan <br>
+                        <div class="subtitle">Atif Aslam</div>`,
+        poster: "thumbnail/20.png",
 
 
     },
     {
         id: 21,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `Dil Galti Kar Baitha Hai | Meet Bros Ft. Jubin Nautiyal<br>
+                        <div class="subtitle">Jubin Nautiyal</div>`,
+        poster: "thumbnail/21.png",
 
 
     },
     {
         id: 22,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `Dil Jhoom | Gadar 2 | Arijit Singh | Sunny Deol, Utkarsh Sharma, Simratt K | Mithoon, Sayeed Quadri<br>
+                        <div class="subtitle"> Arijit Singh</div>`,
+        poster: "thumbnail/22.png",
 
 
     },
     {
         id: 23,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `Dil Ne Yeh Kaha Hain Dil Se - HD VIDEO SONG | Akshay, Suniel shetty<br>
+                        <div class="subtitle">Udit Narayan, Alka Yagnik & Kumar Sanu</div>`,
+        poster: "thumbnail/23.png",
 
 
     },
     {
         id: 24,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `Jaadu Teri Nazar Song | Darr | Shah Rukh Khan, Juhi Chawla | Udit Narayan | Shiv-Hari | Anand Bakshi<br>
+                        <div class="subtitle">Udit Narayan | Shiv-Hari | Anand Bakshi</div>`,
+        poster: "thumbnail/24.png",
 
 
     },
     {
         id: 25,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `Janam Janam – Dilwale | Shah Rukh Khan | Kajol | Pritam<br>
+                        <div class="subtitle">Arijit Singh</div>`,
+        poster: "thumbnail/25.png",
 
 
     },
     {
         id: 26,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `Saat Samundar Paar Video Song (4K) | Divya Bharti <br>
+                        <div class="subtitle">Anand Bhaksi</div>`,
+        poster: "thumbnail/26.png",
 
 
     },
     {
         id: 27,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `Chaleya (Lyrics) - Jawan | Shah Rukh Khan | Nayanthara | Atlee, Anirudh | Arijit Singh | Shilpa Rao<br>
+                        <div class="subtitle"> Arijit Singh | Shilpa Rao</div>`,
+        poster: "thumbnail/27.png",
 
 
     },
     {
         id: 28,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: ` Jhoome Jo Pathaan Song | Shah Rukh Khan, Deepika |<br>
+                        <div class="subtitle">| Arijit Singh </div>`,
+        poster: "thumbnail/28.png",
 
 
     },
     {
         id: 29,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `O Biba Mainu Duur Na Karin (LYRICS) - Vishal Mishra | Zahrah S Khan | Tanishk Bagchi |Khel Khel Mein<br>
+                        <div class="subtitle">ishal Mishra | Zahrah S Khan | Tanishk Bagchi</div>`,
+        poster: "thumbnail/29.png",
 
 
     },
     {
         id: 30,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `Ladki Badi Anjani Hai : Kuch Kuch Hota Hai | Shah Rukh Khan<br>
+                        <div class="subtitle">Alka Yagnik | Kumar Sanu</div>`,
+        poster: "thumbnail/30.png",
 
 
     },
     {
         id: 31,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `Manwa Laage Lyrics | Manwa Laage Song Lyrics from Happy New Year<br>
+                        <div class="subtitle">Shreya Ghoshal & Arijit Singh </div>`,
+        poster: "thumbnail/31.png",
 
 
     },
     {
         id: 32,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `Main Yahaan Hoon - Shahrukh Khan, Preity Zinta | Veer-Zaara | Udit Narayan, Madan Mohan | 90s Songs<br>
+                        <div class="subtitle"> Udit Narayan, Madan Mohan</div>`,
+        poster: "thumbnail/32.png",
 
 
     },
     {
         id: 33,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
+        songName: `Main Koi Aisa Geet Gaoon<br>
+                        <div class="subtitle">Abhijeet & Alka Yagnik</div>`,
+        poster: "thumbnail/33.png",
 
 
     },
@@ -552,7 +554,7 @@ next.addEventListener('click', () => {
         index = 1;
     }
     music.src = `songs/${index}.mp3`;
-    posterMasterplay.src = `thumbnail/${index}.png`
+    posterMasterplay.src = `thumbnail/${index}.png || thumbnail/${index}.jpg`
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause');
@@ -580,28 +582,12 @@ function nextplay() {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let popSongLeft = document.getElementById('popSongLeft');
 let popSongRight = document.getElementById('popSongRight');
 let PopSong = document.querySelector('.pop-song');
 
 popSongRight.addEventListener('click', () => {
-    PopSong.scrollLeft += 200;
+    PopSong.scrollLeft += 360;
 })
 popSongLeft.addEventListener('click', () => {
     PopSong.scrollLeft -= 200;

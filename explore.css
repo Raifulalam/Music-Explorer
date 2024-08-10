@@ -326,7 +326,7 @@ body {
 
 }
 
-.master-play .bar .dot {
+/* .master-play .bar .dot {
     position: absolute;
     width: 5px;
     height: 5px;
@@ -348,7 +348,7 @@ body {
     top: -6px;
     box-shadow: inset 0px 0px 3px #36e2ec;
 
-}
+} */
 
 .master-play .bar input {
     position: absolute;
@@ -596,10 +596,11 @@ body {
 }
 
 .song-side .popular-song .pop-song li {
-    min-width: 85px;
+
+    width: 360px;
     height: 140px;
     list-style: none;
-    margin-right: 3px;
+    margin-right: 8px;
     transition: .3s linear;
 }
 
@@ -609,8 +610,8 @@ body {
 
 .song-side .popular-song .pop-song li .img-play {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -624,7 +625,7 @@ body {
 
 .song-side .popular-song .pop-song li .img-play .bi {
     position: absolute;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
     transition: .3s linear;
     opacity: 0;
@@ -637,8 +638,8 @@ body {
 .song-side .popular-song .pop-song li h5 {
     padding: 5px 0px 0px 5px;
     line-height: 15px;
-    font-size: 10px;
-    width: 100px;
+    font-size: 13px;
+    width: 130px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -656,10 +657,12 @@ body {
 }
 
 .song-side .popular-artists {
-    width: 90%;
+    width: 60%;
     height: auto;
     margin: auto;
     margin-top: 15px;
+    float: left;
+    margin-left: 50px;
 
 }
 
@@ -717,4 +720,58 @@ body {
     height: 100%;
     border-radius: 50%;
 
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: 140%;
+        display: flex;
+        height: auto;
+        margin: 0%;
+    }
+
+    .menu-side .menu-songs {
+        margin-top: 0%;
+    }
+
+    .body {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .menu-side .playlist {
+        margin-top: 5px;
+    }
+
+    .song-side {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-side {
+        width: 100%;
+        height: 90%;
+        margin-bottom: 20px;
+    }
+
+    .song-side .popular-song {
+        margin-top: 30px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .master-play {
+        width: 140%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .master-play img {
+        width: 100px;
+        height: 100px;
+    }
 }
