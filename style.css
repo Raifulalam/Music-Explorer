@@ -66,6 +66,11 @@ body {
     display: none;
     margin: 0px;
     padding: 9px 18px;
+    z-index: 111;
+  }
+
+  #map {
+    z-index: 0;
   }
 
   .topnav a.icon {
@@ -79,6 +84,7 @@ body {
   .topnav {
     width: 100%;
     justify-content: space-between;
+    z-index: 1;
   }
 }
 

@@ -9,6 +9,100 @@ body {
     color: #fff;
 }
 
+/*  for navbar */
+.topnav {
+    display: flex;
+    background: transparent;
+    overflow: hidden;
+    /* position: fixed;
+    z-index: 1; */
+
+
+
+
+}
+
+.hamburger span {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.2s;
+    padding: 0px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    color: rgb(184, 150, 106);
+    border-radius: 5px;
+    box-shadow: 0px 3px 4px rgb(184, 150,
+            106);
+    cursor: pointer;
+    transition: all 0.5s;
+
+    padding: 0px 18px;
+}
+
+.topnav .icon:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+        margin: 0px;
+        padding: 9px 18px;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        margin: 0%;
+        padding-left: 40px;
+
+    }
+
+    .topnav {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.topnav.responsive a {
+    display: block;
+}
+
+.topnav.responsive {
+    display: flex;
+    flex-direction: column-reverse;
+    position: fixed;
+    width: 30%;
+    z-index: 1;
+    background-color: black;
+    margin-left: 70%;
+
+
+
+}
+
+/* main container */
+
 .main {
     position: relative;
     width: 95;
@@ -17,6 +111,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    /* margin-top: 60px; */
 }
 
 .menu-side,
