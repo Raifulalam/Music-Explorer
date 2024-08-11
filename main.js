@@ -123,3 +123,21 @@ const musicQuotes = [
 // Accessing a random quote
 const randomQuote = musicQuotes[Math.floor(Math.random() * musicQuotes.length)];
 document.querySelector('.randompara p').innerHTML = randomQuote;
+let feedback = document.querySelector(".feedback");
+const sendBtn = document.getElementById('sendBtn');
+sendBtn.addEventListener('click', () => {
+    let name = document.getElementById('name').value;
+    name = name.toUpperCase();
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    console.log(name, email, message);
+    feedback.style.color = "#fff";
+    if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields");
+    } else {
+        feedback.style.display = "block";
+        feedback.innerHTML = `Dear ${name}, thank you for your feedback. We will get back to
+            you soon. Your email is ${email} and your message is ${message}.`;
+    }
+})
+

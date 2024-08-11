@@ -1,20 +1,16 @@
 body {
     font-family: Arial, sans-serif;
     background: #12121d;
-    display: flex;
-    justify-content: center;
-
     margin: 0;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     gap: 20px;
-
     color: #333;
-
+    z-index: 0;
 
 }
 
@@ -28,6 +24,7 @@ body {
     align-items: center;
     justify-content: center;
     background: #1f2229;
+    z-index: 0;
 }
 
 #quiz {
@@ -92,6 +89,7 @@ button:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: whitesmoke;
+    z-index: 0;
 
 }
 

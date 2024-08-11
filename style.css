@@ -66,12 +66,13 @@ body {
     display: none;
     margin: 0px;
     padding: 9px 18px;
-    z-index: 111;
+    z-index: 999999999;
   }
 
   #map {
     z-index: 0;
   }
+
 
   .topnav a.icon {
     float: right;

@@ -205,6 +205,26 @@ function suggestSong() {
             suggestedSong = "Back in Black by AC/DC";
         }
     }
+    else if (genre === "hip hop") {
+        // Add more suggestions for rock genre
+        if (mood === "happy" && tempo === "medium") {
+            suggestedSong = "Don't Stop Believin' by Journey";
+        } else if (mood === "sad" && tempo === "slow") {
+            suggestedSong = "Stairway to Heaven by Led Zeppelin";
+        } else if (mood === "energetic" && tempo === "fast") {
+            suggestedSong = "Back in Black by AC/DC";
+        }
+    }
+    else if (genre === "classical") {
+        // Add more suggestions for rock genre
+        if (mood === "happy" && tempo === "medium") {
+            suggestedSong = "Don't Stop Believin' by Journey";
+        } else if (mood === "sad" && tempo === "slow") {
+            suggestedSong = "Stairway to Heaven by Led Zeppelin";
+        } else if (mood === "energetic" && tempo === "fast") {
+            suggestedSong = "Back in Black by AC/DC";
+        }
+    }
     // Add more conditions for other genres
 
     // Display the result

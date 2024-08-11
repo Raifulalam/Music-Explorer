@@ -268,126 +268,6 @@ const songs = [
 
 
     },
-    {
-        id: 34,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 35,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 36,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 37,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 38,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 39,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 40,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 40,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 42,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 43,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 44,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 45,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 45,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 46,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
-    {
-        id: 47,
-        songName: `टूट जाई पलंग राजा जी -Tut Jai Palang Raja Ji<br>
-                        <div class="subtitle">Alan Walker</div>`,
-        poster: "thumbnail/1000173400.png",
-
-
-    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
@@ -593,7 +473,7 @@ popSongLeft.addEventListener('click', () => {
     PopSong.scrollLeft -= 200;
 })
 
-let popArLeft = document.getElementById('popArLeft');
+let popArtLeft = document.getElementById('popArtLeft');
 let popArtRight = document.getElementById('popArtRight');
 let item = document.querySelector('.item');
 
