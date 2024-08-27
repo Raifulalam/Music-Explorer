@@ -140,4 +140,5 @@ sendBtn.addEventListener('click', () => {
             you soon. Your email is ${email} and your message is ${message}.`;
     }
 })
+document.querySelector('.footerp').textContent = `© ${new Date().getFullYear()}  All rights reserved `;
 

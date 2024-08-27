@@ -2,11 +2,12 @@ body {
     font-family: Arial, sans-serif;
     background: #12121d;
     margin: 0;
+    position: relative;
 }
 
 .main-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
     gap: 20px;
     color: #333;
@@ -17,6 +18,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     color: #ccb3b3;
     padding: 20px;
     border-radius: 8px;
@@ -25,6 +27,7 @@ body {
     justify-content: center;
     background: #1f2229;
     z-index: 0;
+    position: relative;
 }
 
 #quiz {
@@ -70,6 +73,8 @@ button:hover {
 .result {
     text-align: center;
     margin-top: 20px;
+    top: 80;
+    left: 60;
 }
 
 .result h2 {
@@ -82,26 +87,98 @@ button:hover {
 }
 
 
-/*quiz form css*/
-.quiz-container {
-    background: #1f2229;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: whitesmoke;
-    z-index: 0;
+.quit {
+    float: right;
+    position: absolute;
 
 }
 
-h1 {
-    color: #efdddd;
+/* for music quiz */
+
+
+.btn.dropdown-toggle {
+    width: 150px;
+    text-align: center;
 }
 
-form {
+span.caret {
+    position: absolute;
+    left: 90%;
+    top: 45%;
+}
+
+label {
+    padding-top: 5px;
+}
+
+.form-label {
+    padding-left: 0px !important;
+}
+
+.form-control {
+    border-radius: 100px;
+}
+
+.btn-success {
+    background-color: #3b7d4a im !important;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-success:hover {
+    background-color: #4daf64;
+}
+
+img.track {
+    border: 3px solid #8a8a8a;
+}
+
+.genre select {
+    padding: 8px 60px;
+    background-color: #8492b9;
     text-align: left;
+    border-radius: 14px;
+    width: 320px;
+    margin: 10px;
+    font-size: large;
 }
 
-#result {
-    margin-top: 20px;
-    font-weight: bold;
+.Playlist select {
+    padding: 8px 60px;
+    background-color: #8492b9;
+    text-align: left;
+    border-radius: 14px;
+    width: 320px;
+    margin: 10px;
+    font-size: large;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    background-color: #8176763f;
+    border-radius: 10px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.list-group a {
+    text-decoration: none;
+    color: #efdddd;
+    background-color: #4e3939;
+    padding: 6px;
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+}
+
+.song-details {
+    font-size: large;
+}
+
+.song-details img {
+    width: 100px;
 }
