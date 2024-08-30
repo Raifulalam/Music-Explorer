@@ -1,42 +1,188 @@
 const singersByState = {
-    "Maharashtra": [
-        "Lata Mangeshkar",
-        "Asha Bhosle",
-        "Sonu Nigam",
-        "Shreya Ghoshal"
+    "Andhra Pradesh": [
+        "S. P. Balasubrahmanyam", // Telugu Film Music
+        "K. S. Chithra",          // Indian Playback and Classical
+        "Hariharan",              // Bollywood, Indian Classical
+        "M. M. Keeravani"         // Telugu Film Music
     ],
-    "Madhya Pradesh": [
-        "Kishore Kumar"
+    "Arunachal Pradesh": [
+        "Taba Chake",            // Indie, Pop
+        "Kemo Noga",             // Local and Folk Music
+        "Rinchin",               // Local Music
+        "Naaibu Saring"          // Local and Folk Music
     ],
-    "Punjab": [
-        "Mohammad Rafi",
-        "Guru Randhawa"
-    ],
-    "West Bengal": [
-        "Arijit Singh",
-        "Shreya Ghoshal"
-    ],
-    "Haryana": [
-        "Sonu Nigam"
+    "Assam": [
+        "Zubeen Garg",           // Assamese, Bollywood
+        "Papon",                 // Assamese, Bollywood
+        "Dipali Borthakur",      // Assamese
+        "Jayanta Hazarika"       // Assamese Folk and Classical
     ],
     "Bihar": [
-        "Udit Narayan"
+        "Udit Narayan",          // Bollywood, Pop
+        "Sharda Sinha",          // Bhojpuri Folk
+        "Manoj Tiwari",          // Bhojpuri Folk, Bollywood
+        "Pawan Singh"            // Bhojpuri Folk
+    ],
+    "Chhattisgarh": [
+        "Teejan Bai",            // Pandavani Folk
+        "Kedar Jadhav",          // Folk
+        "Pooja Sethi",           // Folk
+        "Niranjan Singh"         // Local and Folk Music
+    ],
+    "Goa": [
+        "Lorna",                 // Konkani
+        "Roshan Pereira",        // Konkani
+        "Chris Perry",           // Konkani
+        "Sridhar Menon"          // Konkani and Popular
+    ],
+    "Gujarat": [
+        "Hemant Kumar",          // Hindi and Gujarati Film Music
+        "Falguni Pathak",        // Gujarati Pop and Folk
+        "Kirtidan Gadhvi",       // Gujarati Folk
+        "Aishwarya Majmudar"     // Gujarati and Bollywood
+    ],
+    "Haryana": [
+        "Sapna Choudhary",       // Haryanvi Folk, Pop
+        "Diler Kharkiya",        // Haryanvi Folk
+        "Raj Mawar",             // Haryanvi Folk
+        "Raju Punjabi"           // Haryanvi Folk
     ],
     "Himachal Pradesh": [
-        "Neha Kakkar"
+        "Neha Kakkar",           // Bollywood, Pop
+        "M.S. Dhoni"             // (Cricketer known for his singing appearances)
+    ],
+    "Jharkhand": [
+        "Babulal Marandi",       // Local and Folk Music
+        "Niraj Kumar",           // Folk
+        "Pappu Ahuja",           // Local
+        "Madhusree"              // Local and Bollywood
+    ],
+    "Karnataka": [
+        "S. P. Balasubrahmanyam", // Kannada, Bollywood
+        "K. S. Chithra",          // Indian Playback and Classical
+        "Vani Jairam",           // Indian Playback
+        "Hamsalekha"             // Kannada Film Music
+    ],
+    "Kerala": [
+        "K. J. Yesudas",         // Malayalam Film Music, Classical
+        "Chitra",                // Malayalam Film Music, Indian Playback
+        "M. G. Sreekumar",       // Malayalam Film Music
+        "Sujatha Mohan"          // Malayalam Film Music
+    ],
+    "Ladakh": [
+        "Sonam Wangmo",          // Local and Tibetan Music
+        "Tsering Wangmo",        // Tibetan Folk
+        "Karma Wangdus",         // Tibetan Music
+        "Lobsang Wangyal"        // Tibetan Music
+    ],
+    "Lakshadweep": [
+        "Suman Kalyanpur",       // Indian Playback
+        "Lalitha",               // Local Music
+        "Laxmi Bhaduri",         // Local Music
+        "Anwar Hussain"          // Local Music
     ],
     "Delhi": [
-        "Sunidhi Chauhan",
-        "Badshah"
+        "Sunidhi Chauhan",      // Bollywood, Pop
+        "Badshah",              // Bollywood, Pop
+        "Amit Trivedi",          // Bollywood, Indie
+        "Ritviz"                 // Indie, Pop
     ],
-    "Rajasthan": [
-        "Javed Ali"
+    "Puducherry": [
+        "N. S. Krishnan",       // Tamil Film Music
+        "J. P. Ghosh",          // Tamil Folk
+        "Karthik",              // Tamil and Indian Playback
+        "Shalini"               // Tamil Film Music
+    ],
+    "Maharashtra": [
+        "Lata Mangeshkar",       // Bollywood, Classical
+        "Asha Bhosle",           // Bollywood, Classical, Pop
+        "Kishore Kumar",         // Bollywood, Pop
+        "Mohammad Rafi",         // Bollywood
+        "Sonu Nigam",            // Bollywood, Pop
+        "Shreya Ghoshal",        // Bollywood, Classical
+        "Sukhwinder Singh",      // Bollywood, Pop
+        "Udit Narayan"           // Bollywood, Pop
+    ],
+    "Manipur": [
+        "Thabal Chongba",        // Local Music
+        "Sanjay Leela Bhansali", // Local
+        "Meghachandra Khuraijam",// Local and Folk Music
+        "Elangbam Premchand"     // Local Music
+    ],
+    "Meghalaya": [
+        "Pynshngainlang Syiem",  // Folk
+        "Daphne Yaden",          // Folk and Pop
+        "Maka Raynald",          // Local and Folk Music
+        "Ellie L"                // Local and Indie
+    ],
+    "Mizoram": [
+        "Lalmuansangi",          // Local Music
+        "Lalthangliana",         // Mizo Folk
+        "Kawngzaw",              // Mizo Music
+        "Bawite"                 // Local Music
+    ],
+    "Nagaland": [
+        "Theja Meru",            // Local and Contemporary
+        "Tali Angh",             // Naga Folk
+        "Mikio",                 // Naga Folk
+        "Naga Khel"              // Local Music
+    ],
+    "Odisha": [
+        "Prafulla Kar",          // Odia Film Music
+        "Gita Dey",              // Odia Music
+        "Nirakar Yakshini",      // Odia Music
+        "Basu Chatterjee"        // Odia Music
+    ],
+    "Sikkim": [
+        "Tashi Phunstok",        // Tibetan Music
+        "Pemba Wangchuk",        // Tibetan Music
+        "Dorji Wangchuk",        // Tibetan Music
+        "Namgyal Lhamo"          // Tibetan Music
+    ],
+    "Tamil Nadu": [
+        "Ilaiyaraaja",           // Tamil Film Music, Classical
+        "A. R. Rahman",          // Bollywood, International
+        "K. S. Chithra",         // Indian Playback, Classical
+        "S. Janaki",             // Indian Playback
+        "Hariharan",             // Bollywood, Indian Classical
+        "T. M. Soundararajan",   // Tamil Film Music
+        "Chinmayi",              // Tamil, Bollywood
+        "Karthik"                // Tamil and Bollywood
+    ],
+    "Telangana": [
+        "S. P. Balasubrahmanyam", // Telugu Film Music
+        "K. S. Chithra",          // Indian Playback and Classical
+        "Hariharan",              // Bollywood, Indian Classical
+        "Kailash Kher"            // Folk, Bollywood
+    ],
+    "Tripura": [
+        "Kalimoni Reang",        // Folk Music
+        "Animesh Debbarma",      // Folk Music
+        "Bijoy Choudhury",       // Local Music
+        "Kisore Thakur"          // Local Music
     ],
     "Uttar Pradesh": [
-        "raiful"
+        "Shubha Mudgal",         // Classical, Bollywood
+        "Jubin Nautiyal",        // Bollywood, Pop
+        "Kabita Seth",           // Folk
+        "Mohammad Rafi",         // Bollywood
+        "Udit Narayan"           // Bollywood, Pop
     ],
-    // Note: Rahat Fateh Ali Khan is from Pakistan and not included in this list.
+    "Uttarakhand": [
+        "Meena Rana",            // Local Music
+        "Kishore Kumar",         // Bollywood, Pop
+        "Ravi Mehta",            // Local Music
+        "Anita Rao"              // Local Music
+    ],
+    "West Bengal": [
+        "Arijit Singh",          // Bollywood, Pop
+        "Shreya Ghoshal",        // Bollywood, Classical
+        "Hemanta Mukherjee",     // Bengali, Classical
+        "Manna Dey",             // Classical, Bollywood
+        "Kishore Kumar"          // Bollywood, Pop
+    ]
 };
+
 const visited = []
 
 
