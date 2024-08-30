@@ -655,16 +655,18 @@ function checkAnswer(answer) {
         score++;
         right++;
         correct.textContent = `Correct: ${right}`;
+        next()
     } else {
         wrong++;
         incorrect.textContent = `Incorrect: ${wrong}`;
+        next()
 
     }
-    nextButton.style.display = "inline-block";
+
 }
 
 // Event listener for next button
-nextButton.addEventListener("click", () => {
+function next() {
     currentQuestion++;
     if (currentQuestion < QuizData.length) {
         loadQuestion();
@@ -672,7 +674,7 @@ nextButton.addEventListener("click", () => {
     } else {
         showResult();
     }
-});
+};
 
 // Function to display quiz result
 function showResult() {

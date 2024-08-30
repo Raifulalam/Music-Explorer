@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Quiz</title>
-    <link rel="stylesheet" href="quiz.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CssFiles/quiz.css">
+    <link rel="stylesheet" href="./CssFiles/style.css">
 </head>
 
 <body>
@@ -27,18 +27,18 @@
     <div class="main-container">
 
         <div class="container">
-            <div class="right">
-                <p id="correct">Correct:0</p>
-                <p id="incorrect">Incorrect:0</p>
-            </div>
+
 
             <div id="quiz">
                 <h1>Test Your Knowledge</h1>
+                <div class="right">
+                    <p id="correct">Correct:0</p>
+                    <p id="incorrect">Incorrect:0</p>
+                </div>
                 <h2 id="question"></h2>
                 <div id="options" class="options">
 
                 </div>
-                <button id="next-btn" class="next-btn">Next Question</button>
             </div>
             <div id="result" class="result">
                 <h2></h2>
@@ -96,7 +96,7 @@
     </div>
 
 
-    <script src="quiz.js"></script>
+    <script src="./jsFiles/quiz.js"></script>
 </body>
 
 </html>
