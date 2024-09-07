@@ -1,7 +1,6 @@
 // import {data} from ('./data.js')
 const music = new Audio('songs/KhesariLalYadav.mp3');
 
-music.play();
 const songs = [
     {
         id: 1,
@@ -484,3 +483,78 @@ popArtLeft.addEventListener('click', () => {
     item.scrollLeft -= 200;
 });
 
+const search = document.getElementsByClassName('search');
+const searchBtn = document.getElementById('searchBtn');
+
+searchBtn.addEventListener('click', () => {
+    const popularSong = document.querySelector(".pop-song")
+    let searchValue = document.getElementById('searchInput').value.toLowerCase();
+    let result = songs.filter(songs => songs.songName.toLowerCase().includes(searchValue));
+    let head = document.querySelector('.h4');
+
+    if (result.length > 0) {
+        head.textContent = `Search Result for '${searchValue}'`;
+        popularSong.innerHTML = '';
+        const songItem = document.createElement('div');
+        songItem.innerHTML = ''
+        result.forEach((song, index) => {
+            // PopSong.innerHTML = '';
+
+            // songItem.classList.add('songItem');
+            popularSong.innerHTML += `
+                    <li class="songItem">
+                         <div class="img-play">
+                            <img src="${song.poster}" alt="">
+                            <i class="bi playListPlay bi-play-circle-fill" id="${song.id}"></i>
+                        </div>
+                        <h5>${song.songName}
+                           
+                        </h5>
+                        </li>`
+
+        })
+
+    }
+    else {
+        head.textContent = `No result found for '${searchValue}'`
+        PopSong.innerHTML = '';
+    }
+
+
+    console.log(result);
+
+    console.log(searchValue)
+
+    let index = 0;
+    let posterMasterplay = document.getElementById('poster-masterplay');
+    let title = document.getElementById('title');
+    Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
+        e.addEventListener('click', (el) => {
+            index = el.target.id;
+            // console.log(index)
+            music.src = `songs/${index}.mp3`;
+            posterMasterplay.src = `thumbnail/${index}.png`
+            music.play();
+            masterPlay.classList.remove('bi-play-fill');
+            masterPlay.classList.add('bi-pause');
+
+            let songTitles = songs.filter((els) => {
+                return els.id == index;
+            })
+            songTitles.forEach(ele => {
+                let { songName } = ele;
+                title.innerHTML = songName;
+                // posterMasterplay.src = poster;
+
+            });
+            makeAllBackground();
+            Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = `rgb(105,105,105,.1)`;
+            makeAllPlay();
+            el.target.classList.remove('bi-play-circle-fill');
+            el.target.classList.add('bi-pause-circle-fill');
+            wave.classList.add('active1');
+        });
+    });
+
+
+})

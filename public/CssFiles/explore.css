@@ -14,8 +14,7 @@ body {
     display: flex;
     background: transparent;
     overflow: hidden;
-    /* position: fixed;
-    z-index: 1; */
+
 
 
 
@@ -573,26 +572,40 @@ body {
 
 .song-side nav .search {
     position: relative;
-    width: 40%;
+
     padding: 1px 10px;
     border-radius: 20px;
-    background: rgb(193, 193, 219);
-    color: #c4ccdd;
-    margin-right: 80px;
+    background: rgb(40, 40, 44);
+
 }
 
 .song-side nav .search .bi {
-    font-size: 13px;
-    padding: 3px 0px 0px 10px;
+    font-size: 20px;
+    padding: 10px 0px 0px px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #3caeb4;
+
 }
 
-.song-side nav .search input {
-    background: none;
+.song-side nav .search button {
+    background-color: transparent;
+    border: 0px;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 8px;
+}
+
+
+.search input {
+
     border: none;
     outline: none;
-    color: #fff;
-    padding: 0px 10px;
+    color: #d80808;
+    padding: 0px 40px 10px 10px;
     font-size: 12px;
+    background: transparent;
+    outline: none;
 }
 
 .song-side .content {
@@ -692,7 +705,7 @@ body {
 
 .song-side .popular-song .pop-song li {
 
-    width: 360px;
+
     height: 140px;
     list-style: none;
     margin-right: 8px;
@@ -854,9 +867,7 @@ body {
         margin-top: 30px;
     }
 
-    .search {
-        display: none;
-    }
+
 
     .master-play {
         width: 140%;
