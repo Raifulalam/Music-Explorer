@@ -519,12 +519,6 @@ searchBtn.addEventListener('click', () => {
         head.textContent = `No result found for '${searchValue}'`
         PopSong.innerHTML = '';
     }
-
-
-    console.log(result);
-
-    console.log(searchValue)
-
     let index = 0;
     let posterMasterplay = document.getElementById('poster-masterplay');
     let title = document.getElementById('title');
