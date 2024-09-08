@@ -16,6 +16,7 @@ body {
 }
 
 
+
 .container {
     display: flex;
     flex-direction: column;
@@ -25,7 +26,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: center;
-    background: #1f2229;
     z-index: 0;
     position: relative;
 }

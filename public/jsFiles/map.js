@@ -37,6 +37,12 @@ const singersByState = {
         { name: "Raj Mawar", image: "./PopularSinger/Raj Mawar.jpg" },
 
     ],
+    "Punjab": [
+        { name: "Sidhu Moose Wala", image: "./PopularSinger/Sidhu.jpg" },
+        { name: "Diljit Dosanjh", image: "./PopularSinger/diljit.jpg" },
+        { name: "Guru Randhawa", image: "./PopularSinger/Guru Randhawa.jpg" }
+    ],
+
     "Himachal Pradesh": [
         { name: "Neha Kakkar", image: "./PopularSinger/Neha Kakkar.jpg" },
 
@@ -222,29 +228,6 @@ map.on('click', function (e) {
 });
 const result = document.getElementById('result');
 
-// function findSinger() {
-//     result.innerHTML = '';
-//     const stateName = document.querySelector('.para').innerHTML.trim().toLowerCase().split(',');
-//     const states = Object.keys(singersByState);
-//     stateName.forEach((e) => {
-//         let name = e.trim();
-//         const matchingStates = states.filter(state => state.toLowerCase().includes(name));
-//         console.log(matchingStates);
-//         SingerName = (singersByState[matchingStates[0]]);
-//         if (matchingStates.length > 0) {
-//             SingerName.forEach((e, index) => {
-//                 result.innerHTML += `
-//                 <ul>
-//                 <li class="singer-name">
-//                 <img src="${e.imges}" alt="singer-image">
-//                         ${SingerName[index]}
-//                 </li>
-//                 </ul>
-//                 `
-//             })
-//         }
-//     });
-// }
 
 function displaySingers() {
     result.innerHTML = '';
@@ -268,17 +251,11 @@ function displaySingers() {
 
                 const name = document.createElement('h4');
                 name.textContent = singer.name;
-
-
-
                 singerDiv.appendChild(image);
                 singerDiv.appendChild(name);
 
                 result.appendChild(singerDiv)
             })
         }
-
-        // result.innerHTML = '<p>No singers found for this state.</p>';
-        // return;
     })
 }
