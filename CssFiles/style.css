@@ -241,7 +241,7 @@ p {
   flex-direction: column;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #636876;
+  color: #ffffffc4;
   font-family: sans-serif;
 
 }
@@ -258,7 +258,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+
   margin: 20px;
 
 }
@@ -269,24 +269,31 @@ p {
   margin: 0px;
   padding: 0px;
   cursor: pointer;
+  margin-bottom: 8px;
+  border-radius: 10px;
+
 }
 
 .grid-image {
-  width: 50%;
+  width: 100%;
   height: 100%;
   opacity: .6;
   box-shadow: 0px 3px 4px rgb(184, 150, 106);
+  padding: 0px;
+  margin: 0px;
+  max-width: fit-content;
+  border-radius: 10px;
 }
 
 .grid-item a:hover {
   color: rgb(184, 150, 106);
   border-radius: 5px;
-  box-shadow: 0px 3px 4px rgb(184, 150,
-      106);
+  background-color: #f7f7f748;
+
   cursor: pointer;
   transition: all 0.5s;
   margin: 0px;
-  padding: 0px 18px;
+
 }
 
 

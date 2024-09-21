@@ -159,6 +159,20 @@ body {
     transition: .3s linear;
 }
 
+.menu-side .playlist a {
+    color: #4c5262;
+    text-decoration: none;
+    display: flex;
+
+
+}
+
+.menu-side .playlist a:hover {
+    color: #fff;
+    transition: .3s linear;
+}
+
+
 .menu-side .playlist h4:hover {
     color: #fff;
 }
@@ -420,30 +434,6 @@ body {
 
 }
 
-/* .master-play .bar .dot {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: #36e2ec;
-    border-radius: 50%;
-    left: 0%;
-    top: -1.5px;
-    transition: 1s linear;
-}
-
-.master-play .bar .dot::before {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #36e2ec;
-    border-radius: 50%;
-    left: -6px;
-    top: -6px;
-    box-shadow: inset 0px 0px 3px #36e2ec;
-
-} */
-
 .master-play .bar input {
     position: absolute;
     width: 100%;
@@ -574,10 +564,10 @@ body {
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 380px;
-    padding: 1px 10px;
+    width: 100%;
+    padding: 1px 8px;
     border-radius: 20px;
-    background: rgb(40, 40, 44);
+    background: rgb(20, 38, 44);
     margin-top: 8px;
     align-items: center;
 
@@ -585,7 +575,6 @@ body {
 
 .song-side nav .search .bi {
     font-size: 20px;
-
     cursor: pointer;
     border-radius: 50%;
     color: #3caeb4;
@@ -604,9 +593,9 @@ body {
 .search input {
 
     border: none;
-
-    color: #d80808;
-
+    padding-left: 60px;
+    color: #f2f2f2;
+    width: 100%;
     font-size: 14px;
     background: transparent;
     outline: none;
@@ -769,7 +758,7 @@ body {
 }
 
 .song-side .popular-artists {
-    width: 60%;
+    width: 75%;
     height: auto;
     margin: auto;
     margin-top: 15px;
