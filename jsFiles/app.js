@@ -268,7 +268,7 @@ const songs = [
 
     },
 ]
-
+let lastListen = [];
 Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
     e.getElementsByTagName('img')[0].src = songs[i].poster;
     e.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
@@ -552,3 +552,95 @@ searchBtn.addEventListener('click', () => {
 
 
 })
+
+const play = document.getElementsByClassName('play');
+play[0].addEventListener('click', () => {
+    music.src = 'songs/1.mp3';
+    posterMasterplay.src = 'thumbnail/1.png'
+    music.play();
+    masterPlay.classList.remove('bi-play-fill');
+    masterPlay.classList.add('bi-pause');
+    let songTitles = songs.filter((els) => {
+        return els.id == 1;
+    })
+    songTitles.forEach(ele => {
+        let { songName } = ele;
+        title.innerHTML = songName;
+        // posterMasterplay.src=poster;
+    })
+    makeAllBackground();
+    Array.from(document.getElementsByClassName('songItem'))[0].style.background = `rgb(105,
+            105,105,.1)`
+    makeAllPlay();
+    wave.classList.add('active1');
+})
+
+
+const last = document.getElementById('last');
+
+// Function to play a song and add it to the last listened list
+const playSong = (index) => {
+    music.src = `songs/${index}.mp3`;
+    posterMasterplay.src = `thumbnail/${index}.png`;
+    music.play();
+    masterPlay.classList.remove('bi-play-fill');
+    masterPlay.classList.add('bi-pause');
+
+    let songTitles = songs.filter((els) => els.id == index);
+    songTitles.forEach(ele => {
+        let { songName } = ele;
+        title.innerHTML = songName;
+    });
+
+    // Add to last listened songs
+    if (!lastListen.some(song => song.id === index)) {
+        lastListen.push(songs.find(song => song.id === index));
+    }
+
+    makeAllBackground();
+    Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = `rgb(105,105,105,.1)`;
+    makeAllPlay();
+    wave.classList.add('active1');
+};
+
+Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
+    e.addEventListener('click', (el) => {
+        index = parseInt(el.target.id); // Ensure index is an integer
+        playSong(index); // Use the new play function
+    });
+});
+
+// Last listening button functionality
+last.addEventListener('click', () => {
+    const popularSong = document.querySelector(".pop-song");
+    let head = document.querySelector('.h4');
+    head.textContent = `Last Listening`;
+    popularSong.innerHTML = '';
+
+    if (lastListen.length === 0) {
+        popularSong.innerHTML = `<li>No songs listened yet.</li>`;
+        return;
+    }
+
+    lastListen.forEach((song) => {
+        popularSong.innerHTML += `
+            <li class="songItem">
+                <div class="img-play">
+                    <img src="${song.poster}" alt="">
+                    <i class="bi playListPlay bi-play-circle-fill" id="${song.id}"></i>
+                </div>
+                <h5>${song.songName}</h5>
+            </li>`;
+    });
+
+    // Re-add event listeners to new song items
+    Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
+        e.addEventListener('click', (el) => {
+            index = parseInt(el.target.id);
+            playSong(index); // Use the new play function
+        });
+    });
+});
+
+
+
